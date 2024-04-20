@@ -1,0 +1,89 @@
+:root {
+	--size-of-game: 700px;
+}
+
+html {
+	height: 100%;
+}
+
+html * {
+	font-family: "Times New Roman", Times, serif;
+	box-sizing: border-box;
+}
+
+.main-canvas {
+	width: var(--size-of-game);
+	height: var(--size-of-game);
+	margin: 0 auto;
+	margin-top: 5%;
+	-webkit-filter: grayscale(30%);
+	filter: grayscale(30%);
+}
+
+canvas {
+	cursor: none;
+}
+
+.failed {
+	width: var(--size-of-game);
+	height: var(--size-of-game);
+	display: none;
+	position: absolute;
+	top: 0;
+	margin-top: 5%;
+	left: 50%;
+	translate: -50%;
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 0.84) 0%,
+		rgba(255, 111, 94, 0.57) 100%
+	);
+	text-align: center;
+}
+
+.failed h1,
+.failed h2 {
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.failed h1 {
+	color: #a90000;
+	font-size: 40px;
+	margin-top: 35%;
+}
+
+.failed h2 {
+	font-size: 25px;
+}
+
+.failed button {
+	font-size: 12pt;
+	padding: 10pt 15pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2pt;
+	border-radius: 0;
+}
+
+#counter {
+	width: var(--size-of-game);
+	height: 50px;
+	margin: -50px auto 0;
+	display: flex;
+	justify-content: flex-end;
+	z-index: 2;
+	position: relative;
+}
+
+#counter div {
+	background-color: #ffcd8e;
+	font-size: 25px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
