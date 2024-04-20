@@ -71,7 +71,7 @@ canvas {
 	width: var(--size-of-game);
 	height: 50px;
 	margin: -50px auto 0;
-	display: flex;
+	display: none;
 	justify-content: flex-end;
 	z-index: 2;
 	position: relative;
