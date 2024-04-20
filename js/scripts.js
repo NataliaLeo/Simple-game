@@ -24,7 +24,7 @@ var failed = false;
 var counter = 0;
 
 bg.onload = function () {
-	counterscreen.style.display = "flex"; //иначе отрисовывается в первую очередь и выглядит странно
+	document.querySelector("#counter").style.display = "flex"; //иначе отрисовывается в первую очередь и выглядит странно
 	gameLoop();
 };
 
